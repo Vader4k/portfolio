@@ -5,7 +5,9 @@ const Layout = () => {
   return (
     <section className='bg-bg-50 flex gap-10'>
         <Navbar />
-        <Routing />
+        <div className='w-full px-28'>
+          <Routing />
+        </div>
     </section>
   )
 }
