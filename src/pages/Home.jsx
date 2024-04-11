@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 import { pages } from '../constants'
+import { motion } from 'framer-motion'
 
-
-const Home = () => {
-  
+const Home = () => {  
   return (
     <section className="h-screen w-full flex items-end justify-between gap-20 px-28">
       <div className='mb-48 flex flex-col gap-4'>
@@ -18,10 +17,16 @@ const Home = () => {
         </a>
       </div>
 
-      <div className='flex flex-col leading-[9rem]'>
+      <div className='flex flex-col leading-[13rem]'>
         {pages.map((link) => (
           <Link to={link.path} key={link.id}>
-            <span className='text-[11vw] h1 text-text-50 hover:italic transition-all'>{link.text}</span>
+            <motion.div
+              whileHover={{ x: 20 }}
+              transition={{ type: 'spring', stiffness: 100 }}
+              className='text-[11vw] h1 text-text-50 hover:italic transition-all'
+              >
+                {link.text}
+              </motion.div>
           </Link>
         ))}
       </div>
