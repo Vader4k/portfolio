@@ -24,7 +24,7 @@ const Navbar = () => {
                 { isHomePage ? (
                     <span>
                         {NavLinks.map((item) => (
-                            <NavLink to={item.path} key={item.id}>
+                            <NavLink to={item.path} key={item.id} target='_blank'>
                                 <p className='transform -rotate-90 origin-bottom-left uppercase hover:line-through transition-all my-10'>{item.text}</p>
                             </NavLink>
                         ))}
