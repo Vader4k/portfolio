@@ -15,6 +15,10 @@ export default {
           DEFAULT: '#000000',
           '50': '#1B1918',
         }
+      },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+        Boska: ["Boska", "serif"]
       }
     },
   },
