@@ -18,27 +18,27 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='flex sticky top-0 left-10 h-screen pl-6 py-10 text-[0.8rem] max-w-[50px] flex-col  justify-between'>
+    <nav className='flex sticky top-0 left-10 h-screen pl-6 py-10 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]'>
         <div className='flex flex-col gap-6 relative'>
             <span>
                 { isHomePage ? (
                     <span>
                         {NavLinks.map((item) => (
-                            <NavLink to={item.path} key={item.id} className="mx-6">
-                                <p className='transform -rotate-90 origin-bottom-left uppercase'>{item.text}</p>
+                            <NavLink to={item.path} key={item.id}>
+                                <p className='transform -rotate-90 origin-bottom-left uppercase hover:line-through transition-all my-10'>{item.text}</p>
                             </NavLink>
                         ))}
                     </span>
                 ) : (
 
-                   <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase'>Home</button>
+                   <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through'>Home</button>
 
                 )}
             </span>
 
-            <div className={`${isHomePage ? 'top-[200px]' : 'top-[100px]'} border-b border-black transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
+            <div className={`${isHomePage ? 'top-[250px]' : 'top-[100px]'} border-b border-black transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
         </div>
-        <span className='transform -rotate-90 origin-bottom-left'>@/2024</span>
+        <span className='transform -rotate-90 origin-bottom-left w-[100px]'>@ / 2024</span>
     </nav>
 
   )
