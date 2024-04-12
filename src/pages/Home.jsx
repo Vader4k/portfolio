@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { pages } from '../constants'
 import { motion } from 'framer-motion'
 import CustomCursor from '../components/CustomCursor'
 import { useState } from 'react'
+
 
 const Home = () => {  
 
@@ -30,9 +31,9 @@ const Home = () => {
         <p className='font-Montserrat text-[0.82rem]'>
           Currently working full-time as a junior web developer at
         </p>
-        <a href="https://tethral.com/" target='_blank' className='font-Montserrat text-[0.82rem] font-semibold underline hover:line-through transition-all'>
-          Tethral Technologies
-        </a>
+        <Link to="https://tethral.com/" target='_blank' className='font-Montserrat text-[0.82rem] font-semibold underline hover:line-through transition-all'>
+          <p>Tethral Technologies</p>
+        </Link>
       </div>
 
       <div className='flex flex-col leading-[12rem] mb-16'>

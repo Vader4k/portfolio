@@ -46,7 +46,7 @@ const CustomCursor = ({ cursorVariant }) => {
   return (
     <div className="App">
       <motion.div
-        className="w-[32px] h-[32px] rounded-full fixed bg-black top-0 left-0 right-0"
+        className="w-[32px] h-[32px] rounded-full fixed bg-gray-400 top-0 left-0 right-0 pointer-events-none"
         variants={variants}
         animate={cursorVariant}
         ref={cursorRef}

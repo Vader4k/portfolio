@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='flex sticky top-0 left-10 h-screen pl-6 py-10 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]'>
+    <nav className='flex sticky top-0 left-10 h-screen pl-6 py-12 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]'>
         <div className='flex flex-col gap-6 relative'>
             <span>
                 { isHomePage ? (

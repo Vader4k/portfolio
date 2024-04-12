@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
-
+import me from '../assets/him.jpg'
 
 const About = () => {
   return (
-    <section className="w-full flex items-start justify-center gap-4">
+    <section className="w-full flex items-start justify-center">
       <div className="mt-[10%] w-full font-Montserrat">
-        <h1 className="h1 text-[18rem] leading-[23rem]">About</h1>
+        <h1 className="h1 text-[17rem] leading-[20rem]">About</h1>
         <h2 className="h1 text-[2.5rem]">I{"'"}m, Daniel. A developer, <br /> reader and problem solver.</h2>
         <p className="my-6 text-[0.9rem] max-w-[600px] leading-6">
           With an unwavering passion for technology and curiosity about how computers operate, I embarked on a journey that led me to become a skilled web developer with two years of experience.
@@ -63,15 +63,19 @@ const About = () => {
           <h1 className="h1 text-[1.5rem] text-text-50 py-8">KUDOS</h1>
           <div className="text-[0.9rem] leading-6 max-w-[600px]">
             Some of the works in my portfolio  were inspired by a few friends who helped smoothen my programing journey a bit. Some projects are collaborations with one or two people but i have only included works that i had a large contribution to, whether it{"'"}s design, idea, process, engineering or creative directions.
-            The following people have influenced my growth and career path massively: <Link className="underline hover:line-through transition-all">Onyedika</Link>, <Link  className="underline hover:line-through transition-all">Striker</Link>, <Link className="underline hover:line-through transition-all">Jesse</Link>, <Link className="underline hover:line-through transition-all">Emzor</Link>. <span>THANK YOU.</span>
+            The following people have influenced my growth and career path massively: <Link className="underline hover:line-through transition-all">Onyedika</Link>, <Link  className="underline hover:line-through transition-all">Striker</Link>, <Link to="https://onyekwelujesse.vercel.app" target="_blank" className="underline hover:line-through transition-all">Jesse</Link>, <Link className="underline hover:line-through transition-all">Emzor</Link>. <span>THANK YOU.</span>
           </div>
 
           <Button text="Contact me" path='/contact'/>
         </div>
       </div>
 
-      <div className="mt-[10%] w-full">
-        image
+      <div className="mt-[6%] w-full">
+        <img 
+          src={me} 
+          alt="profile"
+          className="w-[400px] cursor-pointer" 
+          />
       </div>
     </section>
   )
