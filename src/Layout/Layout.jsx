@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar'
 
 const Layout = () => {
   return (
-    <section className='bg-bg-50 flex gap-10'>
+    <section className='bg- flex'>
         <Navbar />
-        <div className='w-full px-52'>
+        <div className='w-full'>
           <Routing />
         </div>
     </section>

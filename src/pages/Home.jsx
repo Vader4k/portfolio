@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <CustomCursor cursorVariant={cursorVariant}/>
-      <section className="h-screen w-full flex items-end justify-between gap-20">
+      <section className="h-screen w-full flex items-end justify-between gap-20 px-20 bg-bg-50">
       <div className='mb-48 flex flex-col gap-4'>
         <h1 className='font-Montserrat uppercase text-[0.95rem] font-medium tracking-[2px] text-text-50'>ODUKWE DANIEL</h1>
         <p className='font-Montserrat text-[0.82rem]'>Frontend Web Developer / Gamer / Movie Lover</p>
