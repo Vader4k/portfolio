@@ -17,7 +17,7 @@ const Home = () => {
   
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
-  console.log(cursorVariant)
+
 
   return (
     <>
