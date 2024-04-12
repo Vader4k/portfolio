@@ -39,3 +39,51 @@ export const pages = [
         path: '/contact'
     }
 ]
+
+export const projetcs = [
+    {
+        id: 1,
+        text: 'HEALTHSTARKS',
+        path: '/healthstark',
+    },
+    {
+        id: 2,
+        text: 'SUMMARIZER',
+        path: '/summarizer'
+    },
+    {
+        id: 3,
+        text: 'ANONSTORE',
+        path: '/anon'
+    },
+    {
+        id: 4,
+        text: 'MEDICARE',
+        path: '/medicare'
+    },
+    {
+        id: 5,
+        text: 'HOOBANK',
+        path: '/hoobank'
+    },
+    {
+        id: 6,
+        text: 'FRIENDS',
+        path: '/friends'
+    },
+    {
+        id: 7,
+        text: 'SOCIALCHEAP',
+        path: '/socialcheap'
+    },
+    {
+        id: 8,
+        text: 'COINKING',
+        path: '/coinking'
+    },
+    {
+        id: 9,
+        text: 'DICTIONARY',
+        path: '/dictionary'
+    }
+]
