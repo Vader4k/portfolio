@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className={`
-      flex sticky top-0 h-screen pl- py-12 px-28 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]
+      flex sticky top-0 h-screen pl- py-12 px-16 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]
       ${activePath === '/' ? 'bg-bg-50 text-black' : activePath === '/about' ? 'bg-bg-50 text-black' : 'bg-text-50 text-bg-50'}`}>
       <div className='flex flex-col gap-6 relative'>
         <span>
@@ -34,11 +34,11 @@ const Navbar = () => {
               ))}
             </span>
           ) : (
-            <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through'>Home</button>
+            <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem]'>Home</button>
           )}
         </span>
 
-        <div className={`${activePath === '/' ? 'top-[250px]' : 'top-[100px]'} border-b border-black transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
+        <div className={`${activePath === '/' || activePath === '/about' ? 'top-[250px] border-black' : 'top-[100px]'} border-b  transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
       </div>
       <span className='transform -rotate-90 origin-bottom-left w-[100px]'>@ / 2024</span>
     </nav>
