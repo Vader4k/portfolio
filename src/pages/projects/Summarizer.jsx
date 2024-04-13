@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import screenshot from '../../assets/images/summarizer.png'
+import Button from '../../components/Button'
 
 const Summarizer = () => {
   return (
@@ -31,7 +32,7 @@ const Summarizer = () => {
           </div>
         </div>
 
-        <img src={screenshot} className="rounded-xl border border-text-50 shadow-xl" alt="" />
+        <img src={screenshot} className="rounded-xl border border-text-50 shadow-xl w-full max-w-[900px]" alt="article summarizer" />
 
         <p className="text-[1rem] max-w-[700px]">
           I came across this project on youtube while trying to learn and understand redux state management and it{"'"}s use cases.
@@ -46,8 +47,13 @@ const Summarizer = () => {
           src="https://www.youtube.com/embed/qgk1OgHOCYA" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
-          className="w-full h-[600px] rounded-2xl"
+          className="w-full max-w-[700px] h-[600px]"
         />
+
+        <div className="text-center py-16">
+          <h1 className="h1 text-[2.5rem]">Check it out.</h1>
+          <Button target="_blank" path='https://v-summarizer.netlify.app' text='https://v-summarizer.netlify.app'/>
+        </div>
 
       </div>
     </section>

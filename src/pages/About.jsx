@@ -78,7 +78,7 @@ const About = () => {
           Product Research / HTML / CSS / JavaScript / React / Bootstrap / Tailwind / Framer Motion / SCSS / Strapi / Wordpress / Notion / Redux / Vite / Netlify / Vercel
         </div>
 
-        <Button text="My CV" path="https://docs.google.com/document/d/1u77out_Srn5qkwXgBo-l66618edQwWEJ2LO381OpwqE/edit"/>
+        <Button target="_blank" text="My CV" path="https://docs.google.com/document/d/1u77out_Srn5qkwXgBo-l66618edQwWEJ2LO381OpwqE/edit"/>
 
         <div className="py-8">
           <h1 className="h1 text-[1.5rem] text-text-50 py-8">KUDOS</h1>
