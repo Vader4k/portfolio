@@ -25,14 +25,14 @@ const Summarizer = () => {
             </div>
             <div>
               <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">URL</h1>
-              <Link to='https://v-summarizer.netlify.app/'>
+              <Link to='https://v-summarizer.netlify.app/' target="_blank">
                 <p className="pt-4 hover:border-b border-black transition-all">https://v-summarizer.netlify.app</p>
               </Link>
             </div>
           </div>
         </div>
 
-        <img src={screenshot} className="rounded-xl border border-text-50 shadow-xl w-full max-w-[900px]" alt="article summarizer" />
+        <img src={screenshot} className="rounded-xl shadow-xl w-full max-w-[900px]" alt="article summarizer" />
 
         <p className="text-[1rem] max-w-[700px]">
           I came across this project on youtube while trying to learn and understand redux state management and it{"'"}s use cases.
@@ -44,7 +44,7 @@ const Summarizer = () => {
         </p>
 
         <iframe 
-          src="https://www.youtube.com/embed/qgk1OgHOCYA" 
+          src="https://www.youtube.com/embed/qgk1OgHOCYA?controls=0&modestbranding=1&rel=0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
           className="w-full max-w-[700px] h-[600px]"
