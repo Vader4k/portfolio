@@ -10,7 +10,6 @@ import Anonstore from './projects/Anonstore'
 import Coinking from './projects/Coinking'
 import Dictionary from './projects/Dictionary'
 import Friends from './projects/Friends'
-import Healthstarks from './projects/Healthstarks'
 import Hoobank from './projects/Hoobank'
 import Medicare from './projects/Medicare'
 import Socialcheap from './projects/Socialcheap'
@@ -28,7 +27,6 @@ export {
     Coinking,
     Dictionary,
     Friends,
-    Healthstarks,
     Hoobank,
     Medicare,
     Socialcheap,

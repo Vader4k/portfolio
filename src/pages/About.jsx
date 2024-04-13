@@ -1,13 +1,30 @@
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
 import me from '../assets/him.jpg'
+import CustomCursor from '../components/CustomCursor'
+import { motion } from 'framer-motion'
+import { useState } from "react"
 
 const About = () => {
+  const [cursorVariant, setCursorVariant] = useState('default')
+  
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
   return (
-    <section className="w-full flex items-start justify-center bg-bg-50 px-20">
+    <>
+      <CustomCursor cursorVariant={cursorVariant}/>
+      <section className="w-full flex items-start justify-center bg-bg-50 px-20">
       <div className="mt-[10%] w-full font-Montserrat">
-        <h1 className="h1 text-[17rem] leading-[20rem]">About</h1>
-        <h2 className="h1 text-[2.5rem]">I{"'"}m, Daniel. A developer, <br /> reader and problem solver.</h2>
+        <motion.h1 
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+          transition={{ type: 'spring', stiffness: 100 }}
+          className="h1 text-[17rem] leading-[20rem]">
+          About
+        </motion.h1>
+        <h2 
+          className="h1 text-[2.5rem]">I{"'"}m, Daniel. A developer, <br /> reader and problem solver.
+        </h2>
         <p className="my-6 text-[0.9rem] max-w-[600px] leading-6">
           With an unwavering passion for technology and curiosity about how computers operate, I embarked on a journey that led me to become a skilled web developer with two years of experience.
           Now i have found my passion in creating digital experiences on the web.
@@ -29,9 +46,13 @@ const About = () => {
           This is one of my favorite qoutes (by shuri:)
         </p>
 
-        <h1 className="h1 text-[2.5rem] max-w-[500px] my-6">
+        <motion.h1
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+          transition={{ type: 'spring', stiffness: 100 }} 
+          className="h1 text-[2.5rem] max-w-[500px] my-6">
           {'"'}How many times do I have to teach you, just because something works doesn’t mean it can’t be improved{'"'}
-        </h1>
+        </motion.h1>
 
         <p className="py-4 text-[0.9rem] max-w-[600px] leading-6">
           This resonates deeply with me because i believe a good programmer should{"'"}nt be attached to his code but see code as a tool to fix a problem and should always be ready to rewrite or discard his code if it cant solve a problem!
@@ -78,6 +99,8 @@ const About = () => {
           />
       </div>
     </section>
+    </>
+    
   )
 }
 

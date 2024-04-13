@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom"
 import { Home, About, Works, Contact, Articles, Error,
-  Healthstarks,
   Summarizer,
   Anonstore,
   Medicare,
@@ -21,7 +20,6 @@ const Routing = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/works" element={<Works />} />
         <Route path="/Articles" element={<Articles />} />
-        <Route path="/project/healthstarks" element={<Healthstarks />} />
         <Route path="/project/summarizer" element={<Summarizer />} />
         <Route path="/project/anon" element={<Anonstore />} />
         <Route path="/project/medicare" element={<Medicare />} />

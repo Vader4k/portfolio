@@ -34,11 +34,11 @@ const Navbar = () => {
               ))}
             </span>
           ) : (
-            <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem]'>Home</button>
+            <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Home</button>
           )}
         </span>
 
-        <div className={`${activePath === '/' || activePath === '/about' || activePath.includes('/project') ? 'top-[250px] border-black' : 'top-[100px]'} border-b  transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
+        <div className={`${activePath === '/' || activePath === '/about' || activePath.includes('/project') ? 'top-[250px] border-black' : 'top-[200px]'} border-b  transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
       </div>
       <span className='transform -rotate-90 origin-bottom-left w-[100px]'>@ / 2024</span>
     </nav>

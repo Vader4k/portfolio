@@ -5,9 +5,9 @@ const Layout = () => {
   return (
     <section className='flex'>
         <Navbar />
-        <div className='w-full'>
+        <main className='w-full'>
           <Routing />
-        </div>
+        </main>
     </section>
   )
 }
