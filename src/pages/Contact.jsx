@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="w-full h-full flex items-center justify-start bg-text-50 px-20 text-bg-50">
       <div>
         <h1 className="h1 text-[16rem] leading-[16rem]">Hello.</h1>
-        <p className="text-[0.9rem] max-w-[500px] leading-6 font-Montserrat py-6">Need a developer to build a well-structured website you can own and maontain? Get in touch</p>
+        <p className="text-[0.9rem] max-w-[500px] leading-6 font-Montserrat py-6">Need a developer to build a well-structured website you can own and maintain? Get in touch</p>
 
         <span className="text-[0.9rem] max-w-[600px] leading-6 font-Montserrat">
           Email: <a className="underline" href="mailto:kingdanny295@gmail.com">kingdanny295@gmail.com</a>

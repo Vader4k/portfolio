@@ -44,46 +44,46 @@ export const projetcs = [
     {
         id: 1,
         text: 'HEALTHSTARKS',
-        path: '/healthstark',
+        path: '/project/healthstarks',
     },
     {
         id: 2,
         text: 'SUMMARIZER',
-        path: '/summarizer'
+        path: '/project/summarizer'
     },
     {
         id: 3,
         text: 'ANONSTORE',
-        path: '/anon'
+        path: '/project/anon'
     },
     {
         id: 4,
         text: 'MEDICARE',
-        path: '/medicare'
+        path: '/project/medicare'
     },
     {
         id: 5,
         text: 'HOOBANK',
-        path: '/hoobank'
+        path: '/project/hoobank'
     },
     {
         id: 6,
         text: 'FRIENDS',
-        path: '/friends'
+        path: '/project/friends'
     },
     {
         id: 7,
         text: 'SOCIALCHEAP',
-        path: '/socialcheap'
+        path: '/project/socialcheap'
     },
     {
         id: 8,
         text: 'COINKING',
-        path: '/coinking'
+        path: '/project/coinking'
     },
     {
         id: 9,
         text: 'DICTIONARY',
-        path: '/dictionary'
+        path: '/project/dictionary'
     }
 ]
