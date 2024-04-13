@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import screenshot from '../../assets/images/summarizer.png'
 
 const Summarizer = () => {
   return (
@@ -29,6 +30,25 @@ const Summarizer = () => {
             </div>
           </div>
         </div>
+
+        <img src={screenshot} className="rounded-xl border border-text-50 shadow-xl" alt="" />
+
+        <p className="text-[1rem] max-w-[700px]">
+          I came across this project on youtube while trying to learn and understand redux state management and it{"'"}s use cases.
+          After watching the video, i decided to recreate it to challenge myself and see if i really understood when and how to use the CreateApi method in Redux and it turned out well 😄 
+        </p>
+
+        <p className="text-[1rem] max-w-[700px]">
+          The input element takes a text input and it checks to validate if it{"'"}s a valid url before making the api call and returning the summary. Plus, it saves your search history and you can easily copy and paste it anytime you need.
+        </p>
+
+        <iframe 
+          src="https://www.youtube.com/embed/qgk1OgHOCYA" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          className="w-full h-[600px] rounded-2xl"
+        />
+
       </div>
     </section>
   )

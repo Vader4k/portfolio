@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
-import me from '../assets/him.jpg'
+import me from '../assets/images/him.jpg'
 import CustomCursor from '../components/CustomCursor'
 import { motion } from 'framer-motion'
 import { useState } from "react"
