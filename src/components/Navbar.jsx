@@ -40,7 +40,7 @@ const Navbar = () => {
 
         <div className={`${activePath === '/' || activePath === '/about' || activePath.includes('/project') ? 'top-[250px] border-black' : 'top-[200px]'} border-b  transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
       </div>
-      <span className='transform -rotate-90 origin-bottom-left w-[100px]'>@ / 2024</span>
+      <span className='transform -rotate-90 origin-bottom-left w-[100px] tracking-widest'>@ / 2024</span>
     </nav>
   );
 };
