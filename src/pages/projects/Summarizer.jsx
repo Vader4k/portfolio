@@ -32,7 +32,7 @@ const Summarizer = () => {
           </div>
         </div>
 
-        <img src={screenshot} className="rounded-xl shadow-xl w-full max-w-[900px]" alt="article summarizer" />
+        <img src={screenshot} className="rounded-xl shadow-xl w-full max-w-[1200px]" alt="article summarizer" />
 
         <p className="text-[1rem] max-w-[700px]">
           I came across this project on youtube while trying to learn and understand redux state management and it{"'"}s use cases.
@@ -47,7 +47,7 @@ const Summarizer = () => {
           src="https://www.youtube.com/embed/qgk1OgHOCYA?controls=0&modestbranding=1&rel=0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
-          className="w-full max-w-[700px] h-[600px]"
+          className="w-full max-w-[1200px] h-[600px]"
         />
 
         <div className="text-center py-16">

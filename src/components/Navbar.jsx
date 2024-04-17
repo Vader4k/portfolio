@@ -19,6 +19,13 @@ const Navbar = () => {
     window.location.reload()
   };
 
+  const handleProject = () => {
+    navigate('/works'); // Route to work page
+    window.location.reload()
+  };
+
+
+
   return (
     <nav className={`
       flex sticky top-0 h-screen pl- py-12 px-16 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]
@@ -34,7 +41,14 @@ const Navbar = () => {
               ))}
             </span>
           ) : (
-            <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Home</button>
+            <>
+              {activePath.includes('/project') ? (
+                <button onClick={handleProject} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Works</button>
+              ) : (
+                <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Home</button>
+              )}
+            </>
+
           )}
         </span>
 

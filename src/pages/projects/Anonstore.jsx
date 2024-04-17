@@ -40,7 +40,7 @@ const Anonstore = () => {
         <img 
           src={screenshot} 
           alt="anon store"
-          className="rounded-xl shadow-xl w-full max-w-[900px]" 
+          className="rounded-xl shadow-xl w-full max-w-[1200px]" 
         />
 
         <p className="text-[1rem] max-w-[700px]">
@@ -52,7 +52,7 @@ const Anonstore = () => {
         </p>
 
         <iframe 
-          className="w-full max-w-[800px] h-[600px]" 
+          className="w-full max-w-[1200px] h-[600px]" 
           src="https://www.youtube.com/embed/z8YEdF7N7Qg?controls=0&modestbranding=1&rel=0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen 
