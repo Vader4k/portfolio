@@ -40,7 +40,7 @@ const Works = () => {
             onClick={() => handleClick(works.path)}
             transition={{ type: 'spring', stiffness: 100 }}
             >
-            <h1 className='h1 text-[7rem] hover:italic transition-all'>{works.text}</h1>
+            <h1 className='h1 text-[7rem] hover:italic transition-all cursor-pointer'>{works.text}</h1>
             <p className='absolute bottom-1 uppercase'>- web development</p>
           </motion.div>
         ))}

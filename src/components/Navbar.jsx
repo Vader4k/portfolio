@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className={`
-      flex sticky top-0 h-screen pl- py-12 px-16 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]
+      flex sticky top-0 h-screen py-12 px-14 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.65rem]
       ${activePath === '/' || activePath.includes('/project') ? 'bg-bg-50 text-black' : activePath === '/about' ? 'bg-bg-50 text-black' : 'bg-text-50 text-bg-50'}`}>
       <div className='flex flex-col gap-6 relative'>
         <span>
