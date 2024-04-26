@@ -28,15 +28,15 @@ const Navbar = () => {
 
   return (
     <nav className={`
-      flex sticky top-0 h-screen py-12 px-14 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.65rem]
+      md:flex hidden sticky top-0 h-screen py-12 px-14 pt-20 max-w-[50px] flex-col justify-between font-Montserrat text-[0.7rem]
       ${activePath === '/' || activePath.includes('/project') ? 'bg-bg-50 text-black' : activePath === '/about' ? 'bg-bg-50 text-black' : 'bg-text-50 text-bg-50'}`}>
       <div className='flex flex-col gap-6 relative'>
-        <span>
+        <span className='w-full my-[-30px]'>
           {activePath === '/' ? (
             <span>
               {NavLinks.map((item) => (
                 <NavLink to={item.path} key={item.id} target='_blank'>
-                  <p className='transform -rotate-90 origin-bottom-left uppercase hover:line-through transition-all my-10 w-[100px]'>{item.text}</p>
+                  <p className='transform -rotate-90 origin-bottom-left uppercase hover:line-through transition-all w-[30px] my-10'>{item.text}</p>
                 </NavLink>
               ))}
             </span>
@@ -45,14 +45,14 @@ const Navbar = () => {
               {activePath.includes('/project') ? (
                 <button onClick={handleProject} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Works</button>
               ) : (
-                <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Home</button>
+                <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20 text-[0.65rem]'>Home</button>
               )}
             </>
 
           )}
         </span>
 
-        <div className={`${activePath === '/' || activePath === '/about' || activePath.includes('/project') ? 'top-[250px] border-black' : 'top-[200px]'} border-b  transform -rotate-90 absolute w-[100px]  left-[-58px]`}/>
+        <div className={`${activePath === '/' || activePath === '/about' || activePath.includes('/project') ? 'top-[250px] border-black' : 'top-[150px]'} border-b  transform -rotate-90 absolute w-[100px] left-[-58px]`}/>
       </div>
       <span className='transform -rotate-90 origin-bottom-left w-[100px] tracking-widest'>@ / 2024</span>
     </nav>

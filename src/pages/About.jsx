@@ -13,17 +13,22 @@ const About = () => {
   return (
     <>
       <CustomCursor cursorVariant={cursorVariant}/>
-      <section className="w-full flex items-start justify-center bg-bg-50 px-20">
-      <div className="mt-[10%] w-full font-Montserrat">
+      <section className="w-full py-20 lg:py-1  bg-bg-50 px-8 lg:px-20">
+      <div className="lg:mt-[10%] w-full lg:w-[-50%] font-Montserrat relative">
+        <img 
+          src={me} 
+          alt="profile"
+          className="xl:w-[500px] lg:w-[400px] md:w-[250px] w-[150px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
+        />
         <motion.h1 
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
           transition={{ type: 'spring', stiffness: 100 }}
-          className="h1 text-[17rem] leading-[20rem]">
+          className="h1 lg:text-[13rem] md:text-[8rem] sm:text-[5.5rem] text-[3.5rem] leading-[7rem] sm:leading-[10rem] md:leading-[13rem] lg:leading-[16rem]">
           About
         </motion.h1>
         <h2 
-          className="h1 text-[2.5rem]">I{"'"}m, Daniel. A developer, <br /> reader and problem solver.
+          className="h1 text-[1.6rem] lg:text-[2.5rem] w-full md:max-w-[500px]">I{"'"}m, Daniel. A developer, reader and problem solver.
         </h2>
         <p className="my-6 text-[0.9rem] max-w-[600px] leading-6">
           With an unwavering passion for technology and curiosity about how computers operate, I embarked on a journey that led me to become a skilled web developer with two years of experience.
@@ -50,7 +55,7 @@ const About = () => {
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
           transition={{ type: 'spring', stiffness: 100 }} 
-          className="h1 text-[2.5rem] max-w-[500px] my-6">
+          className="h1 text-[1.5rem] md:text-[2.5rem] max-w-[500px] my-6">
           {'"'}How many times do I have to teach you, just because something works doesn’t mean it can’t be improved{'"'}
         </motion.h1>
 
@@ -82,21 +87,13 @@ const About = () => {
 
         <div className="py-8">
           <h1 className="h1 text-[1.5rem] text-text-50 py-8">KUDOS</h1>
-          <div className="text-[0.9rem] leading-6 max-w-[600px]">
+          <div className="text-[0.9rem] leading-6 md:max-w-[600px]">
             Some of the works in my portfolio  were inspired by a few friends who helped smoothen my programing journey a bit. Some projects are collaborations with one or two people but i have only included works that i had a large contribution to, whether it{"'"}s design, idea, process, engineering or creative directions.
             The following people have influenced my growth and career path massively: <Link className="underline hover:line-through transition-all">Onyedika</Link>, <Link to='https://aequilibrium.vercel.app/'  className="underline hover:line-through transition-all">Striker</Link>, <Link to="https://onyekwelujesse.vercel.app" target="_blank" className="underline hover:line-through transition-all">Jesse</Link>, <Link to='http://app.dreally.com/Emzor-Lawrence' className="underline hover:line-through transition-all">Emzor</Link>. <span>THANK YOU.</span>
           </div>
 
           <Button text="Contact me" path='/contact'/>
         </div>
-      </div>
-
-      <div className="mt-[6%] w-full">
-        <img 
-          src={me} 
-          alt="profile"
-          className="w-[400px] cursor-pointer" 
-          />
       </div>
     </section>
     </>
