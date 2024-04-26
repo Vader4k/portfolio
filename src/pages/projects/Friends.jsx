@@ -102,7 +102,7 @@ const Friends = () => {
           </p>
         </div>
 
-        <div className="text-center py-16">
+        <div className="text-center py-10">
           <h1 className="h1 text-[2.5rem]">Check it out.</h1>
           <Button target="_blank" path='https://friends-vader2k.vercel.app/' text='https://friends-vader2k.vercel.app'/>
         </div>

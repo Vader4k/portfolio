@@ -74,7 +74,7 @@ const Medicare = () => {
           This is the future Medicare strives to create.  While the beautifully designed frontend lays the groundwork for this vision, the project currently faces limitations due to my own development skillset.  Backend development is an area I'm actively seeking to improve upon, and with that missing piece, Medicare can truly blossom into a powerful tool that revolutionizes healthcare accessibility.
         </p>
 
-        <div className="text-center py-16">
+        <div className="text-center py-10">
           <h1 className="h1 text-[2.5rem]">Check it out.</h1>
           <Button target="_blank" path='https://vaderhospital.vercel.app/' text='https://vaderhospital.vercel.app'/>
         </div>
