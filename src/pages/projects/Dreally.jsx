@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import screenshot from '../../assets/images/hoobank.png'
+import screenshot from '../../assets/images/dreally.png'
 import Button from "../../components/Button"
 
 const Dreally = () => {
@@ -14,24 +14,24 @@ const Dreally = () => {
 
         <div className="max-w-[800px]">
             <h1 className="h1 text-[2.5rem]">
-              Hoobank: My First React Project (Thanks, YouTube!)
+              Dreally is a comprehensive networking platform that helps users connect seamlessly
             </h1>
 
             <div className="flex w-full justify-between items-start py-10">
               <div className="max-w-[150px]">
                 <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">Role</h1>
-                <p className="pt-4">Website Design and web development</p>
+                <p className="pt-4">web development</p>
               </div>
               <div className="max-w-[300px]">
                 <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">Responsibilities</h1>
                 <div className="pt-4">
-                  website Development,
+                  website Development, collaboration with ui/ux designer, product design
                 </div>
               </div>
               <div>
                 <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">URL</h1>
-                <Link to='https://hugoo-bank-app.vercel.app/' target="_blank">
-                  <p className="pt-4 hover:border-b border-black transition-all">https://hugoo-bank-app.vercel.app</p>
+                <Link to='https://friends-vader2k.vercel.app/' target="_blank">
+                  <p className="pt-4 hover:border-b border-black transition-all">https://dreally.com</p>
                 </Link>
               </div>
             </div>
@@ -45,28 +45,31 @@ const Dreally = () => {
         />
 
         <p className="text-[1rem] max-w-[700px]">
-          Hoobank wasn{"'"}t some fancy project - it was my first crack at React, thanks to a killer YouTube tutorial. It might have started as following instructions, but whoa, did I learn a ton!
-          <br />
-          React went from a mystery to, like, totally understandable. Reusable components? Those things became my BFFs, making coding way faster and way cleaner. Plus, separating my Tailwind styles into their own file? Genius! It made everything so much easier to read and keep track of.
+          Dreally is typically an upgrade of linktree. It is comprehensive networking platform that allows users to create digital business cards, showcase their portfolios, and connect with others seamlessly. Users can customize their profiles, share contact information, and network effortlessly using Dreally{"'"}s intuitive interface.
+        </p>
 
-          Hoobank was also where I got schooled on folder structures. No more code chaos - everything had its own place, which made working on the project (and finding stuff later) a breeze. Oh, and yeah, Hoobank was my first time using Tailwind CSS too! Super cool to be able to style stuff without a ton of extra work.
+        <h1 className="h1 text-[1.5rem]">
+          What makes dreally special
+        </h1>
+
+        <p className="text-[1rem] max-w-[700px]">
+            Dreally is designed to cater to both personal and business needs. Whether you{"'"}re an individual looking to showcase your talents or a business owner seeking to expand your network, Dreally offers features and functionalities to suit your requirements.
         </p>
 
         <p className="text-[1rem] max-w-[700px]">
-          special thanks to <em>JavaScript Mastery</em> for putting out such an amzing tutorial on youtbe for young aspiring developers to learn and understand.
-          It was my launchpad into the awesome world of React. I learned a ton about how things work, and those skills are still helping me out today.
+            Dreally{"'"}s digital business cards offer several advantages over traditional paper cards. They are eco-friendly, easily shareable via email or social media, customizable to reflect your branding, and provide analytics insights into engagement. Plus, they eliminate the need for printing and carrying physical cards
         </p>
 
         <iframe 
           className="w-full max-w-[1200px] h-[600px]" 
-          src="https://www.youtube.com/embed/6xD5jXEgkcM?controls=0&modestbranding=1&rel=0"
+          src="https://www.youtube.com/embed/h3SEV1Xg3cA?controls=0&modestbranding=1&rel=0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen 
         />
 
         <div className="text-center py-16">
           <h1 className="h1 text-[2.5rem]">Check it out.</h1>
-          <Button target="_blank" path='https://hugoo-bank-app.vercel.app/' text='https://hugoo-bank-app.vercel.app'/>
+          <Button target="_blank" path='https://dreally.com/' text='https://dreally.com'/>
         </div>
       </div>
     </section>
