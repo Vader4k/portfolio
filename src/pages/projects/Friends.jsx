@@ -7,7 +7,7 @@ const Friends = () => {
     <section className="w-full h-full bg-bg-50 text-text-50 pr-[8%] font-Montserrat text-[0.89rem]">
       <div className="w-full h-full flex flex-col items-center justify-center gap-16">
         <h1 
-            className="h1 text-[13rem] bg-text-50 text-bg-50 h-[95vh] pt-[30rem] mb-10 text-center w-full"
+            className="h1 text-[13rem] bg-text-50 text-bg-50 h-[95vh] pt-[20rem] mb-10 text-center w-full"
           >
             Friends
         </h1>

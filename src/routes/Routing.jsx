@@ -5,9 +5,9 @@ import { Home, About, Works, Contact, Articles, Error,
   Medicare,
   Hoobank,
   Friends,
-  Socialcheap,
   Coinking,
-  Dictionary
+  Dictionary,
+  Dreally
 } from '../pages'
 
 
@@ -25,7 +25,7 @@ const Routing = () => {
         <Route path="/project/medicare" element={<Medicare />} />
         <Route path="/project/hoobank" element={<Hoobank />} />
         <Route path="/project/friends" element={<Friends />} />
-        <Route path="/project/socialcheap" element={<Socialcheap />} />
+        <Route path="/project/dreally" element={<Dreally />} />
         <Route path="/project/coinking" element={<Coinking />} />
         <Route path="/project/dictionary" element={<Dictionary />} />
         <Route path="*" element={<Error />} />

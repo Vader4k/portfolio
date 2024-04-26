@@ -12,7 +12,7 @@ import Dictionary from './projects/Dictionary'
 import Friends from './projects/Friends'
 import Hoobank from './projects/Hoobank'
 import Medicare from './projects/Medicare'
-import Socialcheap from './projects/Socialcheap'
+import Dreally from './projects/Dreally'
 import Summarizer from './projects/Summarizer'
 
 
@@ -29,6 +29,6 @@ export {
     Friends,
     Hoobank,
     Medicare,
-    Socialcheap,
+    Dreally,
     Summarizer
 }

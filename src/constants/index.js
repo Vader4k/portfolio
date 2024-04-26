@@ -68,8 +68,8 @@ export const projetcs = [
     },
     {
         id: 6,
-        text: 'SOCIALCHEAP',
-        path: '/project/socialcheap'
+        text: 'Dreally',
+        path: '/project/dreally'
     },
     {
         id: 7,
