@@ -18,7 +18,7 @@ const About = () => {
         <img 
           src={me} 
           alt="profile"
-          className="xl:w-[500px] lg:w-[400px] md:w-[250px] w-[150px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
+          className="lg:w-[400px] md:w-[250px] w-[150px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
         />
         <motion.h1 
           onMouseEnter={textEnter}
