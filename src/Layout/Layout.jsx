@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 const Layout = () => {
   return (
-    <section className='flex'>
+    <section className='md:flex'>
         <Navbar />
         <main className='w-full'>
           <Routing />
