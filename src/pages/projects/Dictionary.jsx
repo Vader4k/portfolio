@@ -4,20 +4,20 @@ import Button from "../../components/Button"
 
 const Dictionary = () => {
   return (
-    <section className="w-full h-full bg-bg-50 text-text-50 pr-[8%] font-Montserrat text-[0.89rem]">
-      <div className="w-full h-full flex flex-col items-center justify-center gap-16">
+    <section className="w-full h-full bg-bg-50 text-text-50 px-5 md:px-0 md:pr-[8%] font-Montserrat text-[0.89rem]">
+      <div className="w-full h-full flex flex-col items-center justify-center lg:gap-16 gap-8">
         <h1 
-            className="h1 text-[13rem] bg-text-50 text-bg-50 h-[95vh] pt-[20rem] mb-10 text-center w-full"
+            className="h1 text-[3rem] sm:text-[5rem] md:text-[8rem] lg:text-[10rem] xl:text-[13rem] bg-text-50 text-bg-50 h-[70vh] md:h-[95vh] pt-[20rem] lg:mb-10 text-center w-full"
           >
             Dictionary
         </h1>
 
-        <div className="max-w-[800px]">
-            <h1 className="h1 text-[2.5rem]">
+        <div className="w-full max-w-[800px]">
+            <h1 className="h1 text-[1.5rem] lg:text-[2.5rem]">
               An Urban Dictionary App
             </h1>
 
-            <div className="flex w-full justify-between items-start py-10">
+            <div className="flex w-full flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start py-10">
               <div className="max-w-[150px]">
                 <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">Role</h1>
                 <p className="pt-4">web development</p>
@@ -55,14 +55,14 @@ const Dictionary = () => {
         </p>
 
         <iframe 
-          className="w-full max-w-[1200px] h-[600px]" 
+          className="w-full max-w-[1200px] h-[300px] lg:h-[600px]" 
           src="https://www.youtube.com/embed/sABLFZvYGqg?controls=0&modestbranding=1&rel=0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen 
         />
 
         <div className="text-center py-10">
-          <h1 className="h1 text-[2.5rem]">Check it out.</h1>
+          <h1 className="h1 text-[2rem] md:text-[2.5rem]">Check it out.</h1>
           <Button target="_blank" path='https://urban-dictionary-sigma.vercel.app/' text='https://urban-dictionary-sigma.vercel.app/'/>
         </div>
       </div>
