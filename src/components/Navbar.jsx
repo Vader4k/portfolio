@@ -1,22 +1,11 @@
 import { NavLinks } from '../constants' // Assuming NavLinks contains route data
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
   const location = useLocation()
-
-  const navigate = useNavigate();
-
-  const handleHome = () => {
-    navigate('/')
-  };
-
-  const handleProject = () => {
-    navigate('/works'); // Route to work page
-  };
-
-
 
   return (
     <>
@@ -36,9 +25,13 @@ const Navbar = () => {
             ) : (
               <>
                 {location.pathname.includes('/project') ? (
-                  <button onClick={handleProject} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Works</button>
+                  <Link to='/works'>
+                    <button className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Works</button>
+                  </Link>
                 ) : (
-                  <button onClick={handleHome} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20 text-[0.65rem]'>Home</button>
+                  <Link to='/'>
+                    <button className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20 text-[0.65rem]'>Home</button>
+                  </Link>
                 )}
               </>
 
@@ -65,9 +58,13 @@ const Navbar = () => {
               ) : (
                 <>
                   {location.pathname.includes('/project') ? (
-                    <button onClick={handleProject} className='uppercase hover:line-through tracking-[0.4rem]'>Works</button>
+                    <Link to='/works'>
+                      <button className='uppercase hover:line-through tracking-[0.4rem]'>Works</button>
+                    </Link>
                   ) : (
-                    <button onClick={handleHome} className=' uppercase hover:line-through tracking-[0.4rem] text-[0.65rem]'>Home</button>
+                    <Link to='/'>
+                      <button className=' uppercase hover:line-through tracking-[0.4rem] text-[0.65rem]'>Home</button>
+                    </Link>
                   )}
                 </>
 
