@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import CustomCursor from '../components/CustomCursor'
 import { useState } from 'react'
 
-
 const Home = () => {  
 
   const navigate = useNavigate()
