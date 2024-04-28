@@ -21,7 +21,7 @@ const Works = () => {
   return (
     <>
       <CustomCursor cursorVariant={cursorVariant}/>
-    <div className="w-full bg-text-50 h-full text-bg-50 flex flex-col py-20 lg:py-0 lg:flex-row lg:items-end justify-evenly gap-10 px-10 lg:px-0">
+    <div className="w-full bg-text-50 h-full text-bg-50 flex flex-col py-20 lg:py-0 lg:flex-row lg:items-end justify-evenly gap-10 px-10 lg:px-5">
       <div className="font-Montserrat text-[0.89rem] leading-6 lg:max-w-[450px] flex flex-col gap-6 sticky bottom-40">
         <h1 className="text-[1.1rem] font-medium">WORKS</h1>
 

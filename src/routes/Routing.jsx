@@ -9,11 +9,12 @@ import { Home, About, Works, Contact, Articles, Error,
   Dictionary,
   Dreally
 } from '../pages'
-
+import ScrollToTop from '../components/ScrollToTop'
 
 const Routing = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

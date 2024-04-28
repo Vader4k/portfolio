@@ -3,28 +3,21 @@ import Button from "../components/Button"
 import me from '../assets/images/him.jpg'
 import CustomCursor from '../components/CustomCursor'
 import { motion } from 'framer-motion'
-import { useState } from "react"
 
 const About = () => {
-  const [cursorVariant, setCursorVariant] = useState('default')
-  
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
   return (
     <>
-      <CustomCursor cursorVariant={cursorVariant}/>
+      <CustomCursor/>
       <section className="w-full py-20 lg:py-1  bg-bg-50 px-8 lg:px-20">
       <div className="lg:mt-[10%] w-full lg:w-[-50%] font-Montserrat relative">
         <img 
           src={me} 
           alt="profile"
-          className="lg:w-[400px] md:w-[250px] w-[150px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
+          className="xl:w-[400px] sm:w-[200px] w-[130px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
         />
-        <motion.h1 
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
-          transition={{ type: 'spring', stiffness: 100 }}
-          className="h1 lg:text-[13rem] md:text-[8rem] sm:text-[5.5rem] text-[3.5rem] leading-[7rem] sm:leading-[10rem] md:leading-[13rem] lg:leading-[16rem]">
+        <motion.h1
+          transition={{ type: 'spring', stiffness: 100 }} 
+          className="h1 xl:text-[13rem] lg:text-[10rem] md:text-[8rem] sm:text-[5.5rem] text-[3.5rem] leading-[7rem] sm:leading-[10rem] md:leading-[13rem] lg:leading-[16rem]">
           About
         </motion.h1>
         <h2 
@@ -43,7 +36,7 @@ const About = () => {
           Outside of coding, i{"'"}m a big reader. Books help me see the world from new perspectives and give me ideas for my work. When i{"'"}m not coding or reading, you can probably find me lost in a video game or movie. These are more than just extertainment for me - they{"'"}re stories, puzzles, and testaments to what people can create.
         </p>
         <p className="py-6 text-[0.9rem] max-w-[600px] leading-6">
-          Being a web developer is all about learning and growinf. Everyday is a chance to get better and try new things. My goal is to build awesome stuff that works not just today, but for the future too.
+          Being a web developer is all about learning and growing. Everyday is a chance to get better and try new things. My goal is to build awesome stuff that works not just today, but for the future too.
           There will be bumps in the road, but i{"'"}m always up for a challange. For me, success isn{"'"}nt just about end result - it{"'"}s about the journey. Constantly learning, getting better, and pushing my limits one line of code at a time.
         </p>
 
@@ -52,8 +45,6 @@ const About = () => {
         </p>
 
         <motion.h1
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
           transition={{ type: 'spring', stiffness: 100 }} 
           className="h1 text-[1.5rem] md:text-[2.5rem] max-w-[500px] my-6">
           {'"'}How many times do I have to teach you, just because something works doesn’t mean it can’t be improved{'"'}
