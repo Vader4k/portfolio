@@ -17,7 +17,7 @@ const Routing = () => {
   return (
     <>
       <ScrollToTop />
-      <AnimatePresence>
+      <AnimatePresence >
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

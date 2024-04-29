@@ -7,9 +7,9 @@ const Layout = () => {
   const location = useLocation();
 
   const containerVariants = {
-    home: { y: 0, transition: {duration: 0.8, ease: "easeOut"}},
+    home: { y: 0, transition: {duration: 0.8, ease: "easeOut",}},
     other: { y: 0, transition: {duration: 0.8, ease: "easeOut"}},
-    exit: { y: location.pathname === '/' || location.pathname.startsWith('/project/') ? "100vh" : "-100vh", transition: {duration: 0.8, ease: "easeOut"}}
+    exit: { y: location.pathname === '/' || location.pathname.startsWith('/project/') ? "120vh" : "-120vh", transition: {duration: 0.8, ease: "easeOut"}}
   }
 
   return (
@@ -21,7 +21,8 @@ const Layout = () => {
        animate="exit" 
       />
         <Navbar />
-        <main className='w-full'>
+        <main 
+          className='w-full'>
           <Routing />
         </main>
     </section>
