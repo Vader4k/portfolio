@@ -3,7 +3,6 @@ import Works from './Works'
 import About from './About'
 import Articles from './Articles'
 import Contact from './Contact'
-import Error from './ErrorPage'
 
 //projects
 import Anonstore from './projects/Anonstore'
@@ -22,7 +21,6 @@ export {
     About,
     Articles,
     Contact,
-    Error,
     Anonstore,
     Coinking,
     Dictionary,

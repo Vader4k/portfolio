@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import { Home, About, Works, Contact, Articles, Error,
+import { Home, About, Works, Contact, Articles,
   Summarizer,
   Anonstore,
   Medicare,
@@ -32,7 +32,6 @@ const Routing = () => {
           <Route path="/project/dreally" element={<Dreally />} />
           <Route path="/project/coinking" element={<Coinking />} />
           <Route path="/project/dictionary" element={<Dictionary />} />
-          <Route path="*" element={<Error />} />
         </Routes>
       </AnimatePresence>
     </>
