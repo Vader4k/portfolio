@@ -8,16 +8,23 @@ const About = () => {
     <>
       <section className="w-full py-20 lg:py-1  bg-bg-50 px-8 lg:px-20">
       <div className="lg:mt-[10%] w-full lg:w-[-50%] font-Montserrat relative">
-        <img 
+        <motion.img
+          initial={{scale: 0}}
+          animate={{scale:1}}
+          transition={{ duration: 0.5, ease: 'easeOut'}} 
           src={me} 
           alt="profile"
-          className="xl:w-[400px] sm:w-[200px] w-[130px]  -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
+          className="xl:w-[400px] sm:w-[200px] w-[130px] -top-10 right-5 md:right-0 lg:right-0 xl:right-20 cursor-pointer absolute" 
         />
-        <motion.h1
-          transition={{ type: 'spring', stiffness: 100 }} 
-          className="h1 xl:text-[13rem] lg:text-[10rem] md:text-[8rem] sm:text-[5.5rem] text-[3.5rem] leading-[7rem] sm:leading-[10rem] md:leading-[13rem] lg:leading-[16rem]">
-          About
-        </motion.h1>
+        <div className="max-h-[250px] overflow-hidden">
+          <motion.h1
+            initial={{y:'100vh'}}
+            animate={{y:0}}
+            transition={{ duration: 1, ease: 'easeOut'}}
+            className="h1 xl:text-[13rem] lg:text-[10rem] md:text-[8rem] sm:text-[5.5rem] text-[3.5rem] leading-[7rem] sm:leading-[10rem] md:leading-[13rem] lg:leading-[16rem]">
+            About
+          </motion.h1>
+        </div>
         <h2 
           className="h1 text-[1.6rem] lg:text-[2.5rem] w-full md:max-w-[500px]">I{"'"}m, Daniel. A developer, reader and problem solver.
         </h2>
