@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
 import me from '../assets/images/him.jpg'
-import CustomCursor from '../components/CustomCursor'
 import { motion } from 'framer-motion'
 
 const About = () => {
   return (
     <>
-      <CustomCursor/>
       <section className="w-full py-20 lg:py-1  bg-bg-50 px-8 lg:px-20">
       <div className="lg:mt-[10%] w-full lg:w-[-50%] font-Montserrat relative">
         <img 
