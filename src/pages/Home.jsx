@@ -27,7 +27,7 @@ const Home = () => {
         <motion.div
           initial={{opacity: 0}}
           animate={{opacity: 1}}
-          transition={{duration:1, ease:"easeOut", delay: 0.5}} 
+          transition={{duration:1, ease:"easeOut", delay: 1}} 
           className='lg:mb-28 flex flex-col gap-2 md:gap-3 lg:gap-4'>
           <h1 className='font-Montserrat uppercase text-[0.9rem] font-medium tracking-[2px] text-text-50'>ODUKWE DANIEL</h1>
           <p className='font-Montserrat text-[0.8rem]'>Frontend Web Developer / Gamer / Movie Lover</p>
