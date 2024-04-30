@@ -1,13 +1,28 @@
 import { motion } from "framer-motion"
 import { articles } from "../constants"
 import { useState } from "react"
+import ArticleHolder from "../components/ArticleHolder"
+
 
 
 const Articles = () => {
 
+  const [viewArticle, setViewArticle] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState(0)
 
+  const handleClickedArticle = (id) => {
+    setViewArticle(true)
+    setSelectedArticle(id)
+    console.log(selectedArticle)
+  }
+
+  const handleClose = () => {
+    setViewArticle(false)
+    setSelectedArticle(0)
+  }
+
   return (
+    <>
     <div className="w-full min-h-[100vh] bg-text-50 h-full text-bg-50 flex flex-col py-20 lg:py-0 lg:flex-row lg:items-end justify-evenly gap-20 px-10 lg:px-5">
       <div className='sticky bottom-20 max-h-[300px] overflow-hidden w-full'>
         <motion.div
@@ -30,11 +45,42 @@ const Articles = () => {
             key={works.id} 
             className='relative'
             >
-            <h1 className='h1 text-[2rem] hover:underline transition-all cursor-pointer capitalize'>{works.title}</h1>
+            <h1 onClick={() => handleClickedArticle(works.id)} className='h1 text-[2rem] hover:border-b hover:animate-pulse transition-all cursor-pointer capitalize'>{works.title}</h1>
           </motion.div>
         ))}
       </div>
+
+      {viewArticle && selectedArticle === 1 && (
+        <ArticleHolder 
+          onClose={handleClose}
+          selectedArticle={selectedArticle}
+          data={articles[0]}
+        />
+      )}
+      {viewArticle && selectedArticle === 2 && (
+        <ArticleHolder 
+          onClose={handleClose}
+          selectedArticle={selectedArticle}
+          data={articles[1]}
+        />
+      )}
+      {viewArticle && selectedArticle === 3 && (
+        <ArticleHolder 
+          onClose={handleClose}
+          selectedArticle={selectedArticle}
+          data={articles[2]}
+        />
+      )}
+      {viewArticle && selectedArticle === 4 && (
+        <ArticleHolder 
+          onClose={handleClose}
+          selectedArticle={selectedArticle}
+          data={articles[3]}
+        />
+      )}
     </div>
+    </>
+
   )
 }
 

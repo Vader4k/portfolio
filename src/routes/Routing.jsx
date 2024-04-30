@@ -7,7 +7,7 @@ import { Home, About, Works, Contact, Articles,
   Friends,
   Coinking,
   Dictionary,
-  Dreally
+  Dreally,
 } from '../pages'
 import ScrollToTop from '../components/ScrollToTop'
 import { AnimatePresence } from "framer-motion"
