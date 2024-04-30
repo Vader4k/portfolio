@@ -36,7 +36,7 @@ const Articles = () => {
         id: 3,
         title: 'manipulating arrays using array methods in JavaScript',
         path: 'https://kingvader.hashnode.dev/how-to-manipulate-arrays-using-array-methods-in-javascript',
-        text: 'An array is a data structure that stores a collection of values such as numbers, strings, objects, and other arrays.The values in an array are organized linearly and can be accessed by their index, which is their numerical position on the array.This article will closely examine some of the most commonly used array methods and their functions.',
+        text: 'An array is a data structure that stores a collection of values such as numbers, strings, objects, and other arrays.The values in an array are organized linearly and can be accessed by their index, which is their numerical position on the array.',
         timer: '5 Minutes Read',
         img: array
     },
@@ -44,7 +44,7 @@ const Articles = () => {
         id: 4,
         title: 'Understanding Loops in JavaScript.',
         path: 'https://www.showwcase.com/article/34525/understanding-loops-in-javascript',
-        text: 'Loops in JavaScript are control structures that allows for the execution of a block of code repeatedly. Basically, loops are useful when running a particular operation multiple times. Loops are very useful in programming because it automates task that would take a lot of time and effort to manually accomplish.',
+        text: 'Loops in JavaScript are control structures that allows for the execution of a block of code repeatedly. Basically, loops are useful when running a particular operation multiple times. Loops are very useful in programming',
         timer: '3 Minutes Read',
         img: loop
     }
