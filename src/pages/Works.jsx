@@ -28,11 +28,11 @@ const Works = () => {
         </motion.div>
       </div>
 
-      <div className="lg:my-[12%] leading-[3.3rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-normal  flex flex-col gap-5 w-[">
+      <div className="lg:my-[12%] leading-[3.3rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-normal  flex flex-col gap-5">
         {projetcs.map((works) => (
           <motion.div
-            initial={{ filter: 'blur(30px)' }}
-            animate={{ filter: 'blur(0px)' }}
+            initial={{ filter: 'blur(60px)', opacity: 0 }}
+            animate={{ filter: 'blur(0px)', opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}  
             key={works.id} 
             className='relative'
