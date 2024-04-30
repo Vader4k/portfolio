@@ -3,7 +3,7 @@ import read from '../assets/images/now.gif'
 import { Link } from 'react-router-dom';
 
 
-const ArticleHolder = ({ onClose, selectedArticle, data }) => {
+const ArticleHolder = ({ onClose, data }) => {
 
     const backdropVariants = {
         open: { opacity: 1 },
