@@ -35,13 +35,14 @@ const ArticleHolder = ({ onClose, data }) => {
             initial={{scale: 0}}
             animate={{scale:1}}
             transition={{duration: 1, ease: 'easeOut'}} 
-            className='w-full h-[400px] object-cover rounded-xl' src={data.img} alt={data.title} />
-          <h1 className='text-center text-[1.2rem] font-medium capitalize'>{data.title}</h1>
-          <p className='px-6 text-[0.8rem] font-medium'>
+            className='w-full h-[300px] object-cover rounded-xl' src={data.img} alt={data.title} />
+          <h1 className='text-center md:text-[1.2rem] font-medium capitalize'>{data.title}</h1>
+          <p className='px-6 text-[0.8rem]'>
             {data.timer}
           </p>
           <div className='max-h-[150px] overflow-hidden px-6'>
             <motion.p
+              className='text-[0.85rem] md:text-[1rem]'
               initial={{y:'30vh'}}
               animate={{y:0}}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5}}
