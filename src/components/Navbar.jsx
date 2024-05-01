@@ -9,7 +9,6 @@ const Navbar = () => {
 
   const handleClick = (url) => {
     navigate(url)
-    window.location.reload();
   }
 
   return (
