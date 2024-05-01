@@ -29,7 +29,7 @@ const Navbar = () => {
             ) : (
               <>
                 {location.pathname.includes('/project') ? (
-                  <button onClick={() => handleClick('/works')} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20'>Works</button>
+                  <button onClick={() => handleClick('/works')} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.2rem] my-20'>Work</button>
                 ) : (
                   <button onClick={() => handleClick('/')} className='transform -rotate-90 origin-bottom-left uppercase hover:line-through tracking-[0.4rem] my-20 text-[0.65rem]'>Home</button>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               ) : (
                 <>
                   {location.pathname.includes('/project') ? (
-                    <button onClick={() => handleClick('/works')} className='uppercase hover:line-through tracking-[0.4rem]'>Works</button>
+                    <button onClick={() => handleClick('/works')} className='uppercase hover:line-through tracking-[0.2rem]'>Work</button>
                   ) : (
                     <button onClick={() => handleClick('/')} className=' uppercase hover:line-through tracking-[0.4rem] text-[0.65rem]'>Home</button>                  )}
                 </>
