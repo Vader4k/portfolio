@@ -28,18 +28,20 @@ const Works = () => {
         </motion.div>
       </div>
 
-      <div className="lg:my-[12%] leading-[3.3rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-normal  flex flex-col gap-5">
+      <div className="lg:my-[12%] leading-[3.3rem] sm:leading-[4.5rem] md:leading-[5rem] lg:leading-normal  flex flex-col gap-5">
         {projetcs.map((works) => (
           <motion.div
             initial={{ filter: 'blur(60px)', opacity: 0 }}
             animate={{ filter: 'blur(0px)', opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeInOut' }}  
+            transition={{ duration: 1, ease: 'easeInOut' }}
             key={works.id} 
             className='relative'
             onClick={() => handleClick(works.path)}
             >
-            <h1 className='h1 text-[2rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[6vw] hover:italic transition-all cursor-pointer'>{works.text}</h1>
-            <p className='absolute hidden md:block -bottom-10 lg:bottom-1 uppercase text-[1rem]'>- web development</p>
+            <motion.h1
+              whileHover={{x: '8px'}}
+              className='h1 text-[2rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[6vw] hover:italic cursor-pointer'>{works.text}</motion.h1>
+            <p className='absolute hidden sm:block -bottom-10 lg:bottom-1 uppercase text-[0.8rem]'>- web development</p>
           </motion.div>
         ))}
       </div>

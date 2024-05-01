@@ -41,8 +41,9 @@ const Home = () => {
           {pages.map((link) => (
               <motion.div
                 key={link.id}
+                whileHover={{x: '8px'}}
                 onClick={() => handleClick(link.path)}
-                className='text-[3.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[12vw] xl:text-[10rem] cursor-pointer h1 text-text-50 hover:italic transition-all'
+                className='text-[3.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[12vw] xl:text-[10rem] cursor-pointer h1 text-text-50 hover:italic'
                 >
                   {link.text}
                 </motion.div>
