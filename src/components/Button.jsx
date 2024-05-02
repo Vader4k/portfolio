@@ -8,7 +8,7 @@ const Button = ({ text, path, target }) => {
         initial={{ y: "-20vh" }}
         whileInView={{ y: 0 }}
         viewport={{ once: false }} 
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="max-h-[80px] overflow-hidden">
         <button className=" px-8 py-3 my-6 bg-text-50 text-bg-50 hover:px-16 rounded-[50px] transition-all lg:text-[1.2rem] h1">
               {text}
