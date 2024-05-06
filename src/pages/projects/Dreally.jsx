@@ -40,7 +40,7 @@ const Dreally = () => {
               </div>
               <div>
                 <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">URL</h1>
-                <Link to='https://friends-vader2k.vercel.app/' target="_blank">
+                <Link to='https://dreally.com/' target="_blank">
                   <p className="pt-4 hover:border-b border-black transition-all">https://dreally.com</p>
                 </Link>
               </div>
