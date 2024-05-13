@@ -80,7 +80,7 @@ const Medicare = () => {
         />
 
         <p className="text-[1rem] max-w-[700px]">
-          This is the future Medicare strives to create.  While the beautifully designed frontend lays the groundwork for this vision, the project currently faces limitations due to my own development skillset.  Backend development is an area I'm actively seeking to improve upon, and with that missing piece, Medicare can truly blossom into a powerful tool that revolutionizes healthcare accessibility.
+          This is the future Medicare strives to create.
         </p>
 
         <div className="text-center py-10">
