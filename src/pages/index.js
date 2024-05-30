@@ -14,6 +14,7 @@ import Hoobank from './projects/Hoobank'
 import Medicare from './projects/Medicare'
 import Dreally from './projects/Dreally'
 import Summarizer from './projects/Summarizer'
+import Socialcheap from './projects/Socialcheap'
 
 
 export {
@@ -30,4 +31,5 @@ export {
     Medicare,
     Dreally,
     Summarizer,
+    Socialcheap
 }
