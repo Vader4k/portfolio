@@ -15,6 +15,7 @@ import Medicare from './projects/Medicare'
 import Dreally from './projects/Dreally'
 import Summarizer from './projects/Summarizer'
 import Socialcheap from './projects/Socialcheap'
+import Clotya from './projects/Clotya'
 
 
 export {
@@ -31,5 +32,6 @@ export {
     Medicare,
     Dreally,
     Summarizer,
-    Socialcheap
+    Socialcheap,
+    Clotya
 }

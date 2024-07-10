@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const Anonstore = () => {
   return (
     <section className="w-full h-full bg-bg-50 text-text-50 px-5 md:px-0  md:pr-[8%] font-Montserrat text-[0.89rem]">
-      <div className="w-full h-full flex flex-col items-center justify-center lg:gap-16 gap-8">
+      <div className="flex flex-col items-center justify-center w-full h-full gap-8 lg:gap-16">
         <div className="max-h-[750px] overflow-hidden bg-text-50 text-bg-50 h-[70vh] md:h-[95vh] pt-[20rem] lg:mb-10 w-full">
           <motion.h1
             initial={{y: '100vh'}}
@@ -27,7 +27,7 @@ const Anonstore = () => {
             Website design and development of a simple shopping website using vanilla js - a personal project
           </h1>
 
-          <div className="flex w-full flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start py-10">
+          <div className="flex flex-col items-start justify-between w-full gap-6 py-10 lg:flex-row lg:gap-0">
             <div className="max-w-[150px]">
               <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">Role</h1>
               <p className="pt-4">Website Design and web development</p>
@@ -41,7 +41,7 @@ const Anonstore = () => {
             <div>
               <h1 className="uppercase text-[1rem] font-medium border-b border-black w-fit">URL</h1>
               <Link to='https://anon-stores.vercel.app/' target="_blank">
-                <p className="pt-4 hover:border-b border-black transition-all">https://anon-stores.vercel.app</p>
+                <p className="pt-4 transition-all border-black hover:border-b">https://anon-stores.vercel.app</p>
               </Link>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Anonstore = () => {
         />
 
         
-        <div className="text-center py-10">
+        <div className="py-10 text-center">
           <h1 className="h1 text-[2rem] md:text-[2.5rem]">Check it out.</h1>
           <Button target="_blank" path='https://anon-stores.vercel.app/' text='https://anon-stores.vercel.app/'/>
         </div>

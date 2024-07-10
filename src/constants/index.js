@@ -43,46 +43,51 @@ export const pages = [
 export const projetcs = [
     {
         id: 1,
+        text: 'CLOTYA',
+        path: '/project/clotya'
+    },
+    {
+        id: 2,
         text: 'SOCIALCHEAP',
         path: '/project/socialcheap'
     },
     {
-        id: 2,
+        id: 3,
         text: 'SUMMARIZER',
         path: '/project/summarizer'
     },
     {
-        id: 3,
+        id: 4,
         text: 'ANONSTORE',
         path: '/project/anon'
     },
     {
-        id: 4,
+        id: 5,
         text: 'MEDICARE',
         path: '/project/medicare'
     },
     {
-        id: 5,
+        id: 6,
         text: 'HOOBANK',
         path: '/project/hoobank'
     },
     {
-        id: 6,
+        id: 7,
         text: 'FRIENDS',
         path: '/project/friends'
     },
     {
-        id: 7,
+        id: 8,
         text: 'Dreally',
         path: '/project/dreally'
     },
     {
-        id: 8,
+        id: 9,
         text: 'COINKING',
         path: '/project/coinking'
     },
     {
-        id: 9,
+        id: 10,
         text: 'DICTIONARY',
         path: '/project/dictionary'
     }

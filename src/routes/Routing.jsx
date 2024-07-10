@@ -8,7 +8,8 @@ import { Home, About, Works, Contact, Articles,
   Coinking,
   Dictionary,
   Dreally,
-  Socialcheap
+  Socialcheap,
+  Clotya
 } from '../pages'
 import ScrollToTop from '../components/ScrollToTop'
 import { AnimatePresence } from "framer-motion"
@@ -34,6 +35,7 @@ const Routing = () => {
           <Route path="/project/coinking" element={<Coinking />} />
           <Route path="/project/dictionary" element={<Dictionary />} />
           <Route path="/project/socialcheap" element={<Socialcheap />} />
+          <Route path="/project/clotya" element={<Clotya />} />
         </Routes>
       </AnimatePresence>
     </>
