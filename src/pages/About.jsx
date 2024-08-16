@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const About = () => {
   return (
     <>
-      <section className="w-full py-20 lg:py-1  bg-bg-50 px-8 lg:px-20">
+      <section className="w-full px-8 py-20 lg:py-1 bg-bg-50 lg:px-20">
       <div className="lg:mt-[10%] w-full lg:w-[-50%] font-Montserrat relative">
         <motion.img
           initial={{scale: 0}}
@@ -85,13 +85,13 @@ const About = () => {
           </div>
         </motion.div>
 
-        <Button target="_blank" text="My CV" path="https://docs.google.com/document/d/1u77out_Srn5qkwXgBo-l66618edQwWEJ2LO381OpwqE/edit"/>
+        <Button target="_blank" text="My CV" path="https://drive.google.com/file/d/11fZvStzxtqAgOXnBJY4FG3vrHp2jVy4l/view?usp=drive_link"/>
 
         <div className="py-8">
           <h1 className="h1 text-[1.5rem] text-text-50 py-8">KUDOS</h1>
           <div className="text-[0.9rem] leading-6 md:max-w-[600px]">
             Some of the works in my portfolio  were inspired by a few friends who helped smoothen my programing journey a bit. Some projects are collaborations with one or two people but i have only included works that i had a large contribution to, whether it{"'"}s design, idea, process, engineering or creative directions.
-            The following people have influenced my growth and career path massively: <Link className="underline hover:line-through transition-all">Onyedika</Link>, <Link to='https://aequilibrium.vercel.app/'  className="underline hover:line-through transition-all">Striker</Link>, <Link to="https://onyekwelujesse.vercel.app" target="_blank" className="underline hover:line-through transition-all">Jesse</Link>, <Link to='http://app.dreally.com/Emzor-Lawrence' className="underline hover:line-through transition-all">Emzor</Link>. <span>THANK YOU.</span>
+            The following people have influenced my growth and career path massively: <Link className="underline transition-all hover:line-through">Onyedika</Link>, <Link to='https://aequilibrium.vercel.app/'  className="underline transition-all hover:line-through">Striker</Link>, <Link to="https://onyekwelujesse.vercel.app" target="_blank" className="underline transition-all hover:line-through">Jesse</Link>, <Link to='http://app.dreally.com/Emzor-Lawrence' className="underline transition-all hover:line-through">Emzor</Link>. <span>THANK YOU.</span>
           </div>
 
           <Button text="Contact me" path='/contact'/>
