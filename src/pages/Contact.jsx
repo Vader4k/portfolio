@@ -32,7 +32,7 @@ const Contact = () => {
               
               <a href='https://twitter.com/kingdanny295' target="_blank" className="underline hover:line-through">Twitter</a> / 
               
-              <a href='https://github.com/vader2k' target="_blank" className="underline hover:line-through">Github</a>
+              <a href='https://github.com/vader4k' target="_blank" className="underline hover:line-through">Github</a>
             </div>
           </motion.div>
         </div>
