@@ -3,7 +3,7 @@ export const NavLinks = [
     {
         id: 1,
         text: 'G H',
-        path: 'https://github.com/vader2k'
+        path: 'https://github.com/vader4k'
     },
     {
         id: 2,
